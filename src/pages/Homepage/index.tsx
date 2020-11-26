@@ -6,6 +6,7 @@ import { Container, Main } from "./styles";
 import api from "../../services/api";
 import CategoryChart from "../../components/CategoryChart";
 import DeputyChart from "../../components/DeputiesChart";
+
 import PartiesChart from "../../components/PartiesChart";
 
 export interface IParties {
@@ -52,6 +53,7 @@ const Homepage: React.FC = () => {
       {fullData ? (
         <Main>
           <h1>Veja os destaques</h1>
+          
           <CategoryChart fullData={fullData} />
           <DeputyChart fullData={fullData} />
           <PartiesChart fullData={fullData} />

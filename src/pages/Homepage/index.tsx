@@ -6,6 +6,7 @@ import { Container, Main } from "./styles";
 import api from "../../services/api";
 import CategoryChart from "../../components/CategoryChart";
 import DeputyChart from "../../components/DeputiesChart";
+import PartiesChart from "../../components/PartiesChart";
 
 export interface IParties {
   name: string;
@@ -13,6 +14,7 @@ export interface IParties {
   formatedFinalValue: string;
   midValue: number;
   formatedMidValue: string;
+  partDeputies: IDeputies[];
 }
 
 export interface IDeputies {
@@ -52,6 +54,7 @@ const Homepage: React.FC = () => {
           <h1>Veja os destaques</h1>
           <CategoryChart fullData={fullData} />
           <DeputyChart fullData={fullData} />
+          <PartiesChart fullData={fullData} />
         </Main>
       ) : (
         <></>

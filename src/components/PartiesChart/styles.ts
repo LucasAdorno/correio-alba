@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 90%;
-  height: 280px;
+  min-height: 380px;
   padding: 40px 20px;
 
   margin: 20px auto;
@@ -12,7 +12,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   gap: 10px;
 
   background: var(--subcontainers-background);
@@ -22,29 +22,69 @@ export const Container = styled.div`
   }
 `;
 
-export const DeputyLine = styled.div<{ percent: number }>`
+export const PartyContainer = styled.div`
   width: 100%;
-  height: 30px;
+  min-height: 80px;
+  max-height: 80px;
+
+  display: flex;
+  flex-direction: column;
+
+  background: #d4d4d4;
+
+  overflow: hidden;
+
+  transition: all 0.3s;
+  &.expand-party {
+    max-height: 280px;
+  }
+`;
+
+export const HeaderPartyContainer = styled.div`
+  width: 100%;
+  min-height: 80px;
+  max-height: 80px;
+  padding: 2px 12px;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  h1 {
-    font-size: 12px;
-  }
+  background: #c4c4c4;
+
+  overflow: hidden;
+
+  cursor: pointer;
 
   div {
-    width: ${(props) => props.percent}%;
+    width: 240px;
     height: 30px;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    border-radius: 4px;
-
-    background-color: #c12727;
-    color: #fff;
+    background: #c12727;
+    color: #fcfcfc;
   }
+`;
+
+export const MainPartyContainer = styled.div`
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 8px;
+
+  overflow: hidden;
+`;
+
+export const PartyDeputyLine = styled.div`
+  width: 100%;
+  padding: 4px 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 `;

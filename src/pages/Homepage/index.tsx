@@ -11,6 +11,8 @@ export interface IParties {
   name: string;
   finalValue: number;
   formatedFinalValue: string;
+  midValue: number;
+  formatedMidValue: string;
 }
 
 export interface IDeputies {

@@ -64,6 +64,8 @@ export const HeaderPartyContainer = styled.div`
     align-items: center;
     justify-content: center;
 
+    border-radius: 8px;
+
     background: #c12727;
     color: #fcfcfc;
   }

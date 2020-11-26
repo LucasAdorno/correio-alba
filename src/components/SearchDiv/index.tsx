@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
@@ -29,6 +30,7 @@ const SearchDiv: React.FC = () => {
             placeholder="Partido, Deputado, Categoria, Recebedor..."
           />
         </div>
+        <Link to="/search">Pesquisar</Link>
       </InputDiv>
       <DateDiv>
         <h4>Período</h4>

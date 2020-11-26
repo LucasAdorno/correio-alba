@@ -15,6 +15,8 @@ export const InputDiv = styled.div`
   flex-direction: column;
   align-items: center;
 
+  margin-top: 48px;
+
   div {
     width: 100%;
     height: 36px;
@@ -38,6 +40,23 @@ export const InputDiv = styled.div`
     border: none;
 
     background-color: #efefef;
+  }
+
+  a {
+    width: 100px;
+    height: 40px;
+    padding: 4px;
+    margin-top: 8px;
+
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 4px;
+
+    background: var(--primary-color);
+    color: #fafafa;
   }
 `;
 

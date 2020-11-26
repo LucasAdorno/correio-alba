@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 80%;
+  width: 90%;
   height: 280px;
   padding: 40px 20px;
 
@@ -31,7 +31,7 @@ export const DeputyLine = styled.div<{ percent: number }>`
   justify-content: space-between;
 
   h1 {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   div {
@@ -42,7 +42,9 @@ export const DeputyLine = styled.div<{ percent: number }>`
     align-items: center;
     justify-content: center;
 
-    background-color: #ee3333;
+    border-radius: 4px;
+
+    background-color: #c12727;
     color: #fff;
   }
 `;

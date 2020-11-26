@@ -12,13 +12,13 @@ const DeputyChart: React.FC<Props> = ({ fullData }) => {
   return (
     <Container>
       <h3>Deputados com mais gastos</h3>
-      {fullData.topFiveDeputies.map((deputy) => (
+      {fullData.topFiveDeputies.map((deputy, index) => (
         <DeputyLine
           percent={
             (deputy.finalValue / fullData.topFiveDeputies[0].finalValue) * 70
           }
         >
-          <h4>{deputy.name}</h4>
+          <h4>{index + 1 + "º " + deputy.name}</h4>
           <div>{deputy.formatedFinalValue}</div>
         </DeputyLine>
       ))}

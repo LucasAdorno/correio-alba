@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 80%;
+  width: 90%;
   height: 280px;
   padding: 40px 20px;
 
@@ -37,6 +37,9 @@ export const CategoryLine = styled.div<{ percent: number }>`
   div {
     width: ${(props) => props.percent}%;
     height: 30px;
-    background-color: #ee3333;
+
+    border-radius: 4px;
+
+    background-color: #c12727;
   }
 `;

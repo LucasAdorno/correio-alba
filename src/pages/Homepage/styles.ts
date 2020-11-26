@@ -25,3 +25,22 @@ export const Main = styled.div`
   align-items: center;
   justify-content: center;
 `;
+
+export const History = styled.div`
+  width: 98%;
+  padding: 10px;
+  background: #CFCFCF;
+  color: #333333;
+
+  > h2 {
+    padding: 20px;
+  }
+  
+  .line-information {
+    padding: 10px;
+    
+    display: flex;
+    justify-content: space-between;
+    background-color: #C4C4C4;
+  }
+`;

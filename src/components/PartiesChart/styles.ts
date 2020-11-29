@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 90%;
+  width: 100%;
   min-height: 380px;
   padding: 40px 20px;
 
@@ -12,7 +12,6 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
   gap: 10px;
 
   background: var(--subcontainers-background);
@@ -47,8 +46,9 @@ export const HeaderPartyContainer = styled.div`
   padding: 2px 12px;
 
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
 
   background: #c4c4c4;
 
@@ -66,8 +66,13 @@ export const HeaderPartyContainer = styled.div`
 
     border-radius: 8px;
 
-    background: #c12727;
+    background: var(--chart-bar-color);
     color: #fcfcfc;
+  }
+
+  @media (min-width: 900px) {
+    flex-direction: row;
+    justify-content: space-between;
   }
 `;
 

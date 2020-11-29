@@ -5,17 +5,26 @@ export const Container = styled.div`
   max-width: 1200px;
 
   display: flex;
-  align-items: center;
+  flex-direction: column;
+
+  @media (min-width: 900px) {
+    flex-direction: row;
+    align-items: center;
+  }
 `;
 
 export const InputDiv = styled.div`
-  width: 60%;
+  width: 100%;
 
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
 
-  margin-top: 48px;
+  @media (min-width: 900px) {
+    width: 60%;
+
+    flex-direction: column;
+  }
 
   div {
     width: 100%;
@@ -61,11 +70,16 @@ export const InputDiv = styled.div`
 `;
 
 export const DateDiv = styled.div`
-  width: 40%;
+  width: 100%;
 
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+
+  @media (min-width: 900px) {
+    width: 40%;
+    flex-direction: column;
+  }
 
   #date-selector-div {
     width: 100%;

@@ -15,6 +15,7 @@ export default createGlobalStyle`
     --secondary-color: #C12727;
     --footer-text-color: #565656;
     --subcontainers-background: #D3D3D3;
+    --chart-bar-color: #00588a;
   }
 
   body {

@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from "react";
-import SearchDiv from "../../components/SearchDiv";
-import { Container, Main } from "./styles";
-import api from "../../services/api";
-import CategoryChart from "../../components/CategoryChart";
-import DeputyChart from "../../components/DeputiesChart";
-import DataContainer from "../../components/DataContainer";
+import React from "react";
+// import SearchDiv from "../../components/SearchDiv";
+// import { Container, Main } from "./styles";
+// import api from "../../services/api";
+// import CategoryChart from "../../components/CategoryChart";
+// import DeputyChart from "../../components/DeputiesChart";
+// import DataContainer from "../../components/DataContainer";
 
 export interface IParties {
   name: string;
@@ -32,21 +32,22 @@ export interface IData {
 }
 
 const Homepage: React.FC = () => {
-  const [fullData, setFullData] = useState<IData>();
+  // const [fullData, setFullData] = useState<IData>();
 
-  useEffect(() => {
-    api.get("/results").then((response) => {
-      const { data } = response;
+  // useEffect(() => {
+  //   api.get("/results").then((response) => {
+  //     const { data } = response;
 
-      setFullData(data);
-    });
-  }, []);
+  //     setFullData(data);
+  //   });
+  // }, []);
 
   return (
-    <Container>
-      <SearchDiv />
-      <DataContainer />
-    </Container>
+    // <Container>
+    //   <SearchDiv />
+    //   <DataContainer />
+    // </Container>
+    <></>
   );
 };
 

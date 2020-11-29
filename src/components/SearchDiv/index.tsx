@@ -30,7 +30,6 @@ const SearchDiv: React.FC = () => {
             placeholder="Partido, Deputado, Categoria, Recebedor..."
           />
         </div>
-        <Link to="/search">Pesquisar</Link>
       </InputDiv>
       <DateDiv>
         <h4>Período</h4>

@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 90%;
-  height: 280px;
+  width: 100%;
+  height: 480px;
   padding: 40px 20px;
 
   margin: 20px auto;
@@ -24,10 +24,11 @@ export const Container = styled.div`
 
 export const DeputyLine = styled.div<{ percent: number }>`
   width: 100%;
-  height: 30px;
+  height: 80px;
 
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: space-between;
 
   h1 {
@@ -44,7 +45,7 @@ export const DeputyLine = styled.div<{ percent: number }>`
 
     border-radius: 4px;
 
-    background-color: #c12727;
+    background-color: var(--chart-bar-color);
     color: #fff;
   }
 `;

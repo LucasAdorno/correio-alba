@@ -44,7 +44,7 @@ export const DeputyLine = styled.div<{ percent: number }>`
 
     border-radius: 4px;
 
-    background-color: #c12727;
+    background-color: #00578A;
     color: #fff;
   }
 `;

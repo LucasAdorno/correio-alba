@@ -13,33 +13,45 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 30px;
 
-  background: var(--subcontainers-background);
+  /* background: var(--subcontainers-background); */
 
   h3 {
     margin-bottom: 10px;
+    
   }
 `;
 
 export const CategoryLine = styled.div<{ percent: number }>`
   width: 100%;
   height: 30px;
+  gap: 10px;
 
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: left;
 
   h1 {
     font-size: 14px;
   }
 
+  h4 {
+    background: lightgrey;
+    width: 300px;
+    padding: 14px 24px 14px 24px;
+    font-size: 16px;
+    margin-right: 10px;
+    white-space: nowrap;
+    
+  }
+
   div {
     width: ${(props) => props.percent}%;
-    height: 30px;
-
-    border-radius: 4px;
-
-    background-color: #c12727;
+    position: relative;
+    /* left: 380px; */
+    height: 46px;
+    border-radius: 0px;
+    background-color: #00578A;
   }
 `;

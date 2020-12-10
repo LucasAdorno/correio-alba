@@ -26,7 +26,7 @@ export const InputDiv = styled.div`
     align-items: center;
     gap: 4px;
 
-    border-radius: 8px;
+    border-radius: 0px;
     border: 2px solid #3d55ad;
 
     background-color: #efefef;
@@ -53,7 +53,7 @@ export const InputDiv = styled.div`
     align-items: center;
     justify-content: center;
 
-    border-radius: 4px;
+    border-radius: 0px;
 
     background: var(--primary-color);
     color: #fafafa;
@@ -84,9 +84,9 @@ export const DateDiv = styled.div`
     justify-content: center;
 
     text-align: center;
-    font-weight: 600;
+    font-weight: 400;
 
-    border-radius: 8px;
+    border-radius: 0px;
     border: 2px solid #3d55ad;
 
     background-color: #efefef;

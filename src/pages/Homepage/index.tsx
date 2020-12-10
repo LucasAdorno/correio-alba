@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
-import SearchDiv from "../../components/SearchDiv";
+
+import api from "../../services/api";
 
 import { Container, Main } from "./styles";
 
-import api from "../../services/api";
+import SearchDiv from "../../components/SearchDiv";
 import CategoryChart from "../../components/CategoryChart";
 import DeputyChart from "../../components/DeputiesChart";
-
 import PartiesChart from "../../components/PartiesChart";
 
 export interface IParties {
@@ -48,11 +48,17 @@ const Homepage: React.FC = () => {
 
   return (
     <Container>
-      <h1>Pesquise as despesas dos deputados</h1>
+      <div className="redHeader">
+        <h1>PRESTAÇÃO DE CONTAS</h1>
+      </div>
+      
       <SearchDiv />
       {fullData ? (
         <Main>
-          <h1>Veja os destaques</h1>
+          <div className="redHeader">
+            <h1>DESTAQUES</h1>
+          </div>
+          
           
           <CategoryChart fullData={fullData} />
           <DeputyChart fullData={fullData} />

@@ -2,21 +2,22 @@ import styled from "styled-components";
 
 export const Container = styled.header`
   width: 100%;
-  height: 160px;
-  padding: 18px 0;
+  height: 112px;
+  padding: 28px 32px;
+  
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
-  background: var(--primary-color);
+  background: #00578A;
 
   h1 {
     padding-left: 20px;
+    font-size: 48px;
+    font-weight: 700;
 
-    font-weight: 500;
-
-    color: #e0e0e0;
+    color: #FFFFFF;
   }
 
   div {

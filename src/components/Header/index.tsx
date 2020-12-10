@@ -6,9 +6,9 @@ const Header: React.FC = () => {
   return (
     <Container>
       <h1>
-        Onde está o <br /> dinheiro?
+        ONDE FOI PARAR O DINHEIRO?
       </h1>
-      <div></div>
+      {/* <div></div> */}
     </Container>
   );
 };

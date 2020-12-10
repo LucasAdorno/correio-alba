@@ -6,11 +6,11 @@ export default createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     outline: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'PT Sans', sans-serif;
   }
 
   html {
-    --background-color: #e0e0e0;
+    --background-color: #FFFFFF;
     --primary-color: #133964;
     --secondary-color: #C12727;
     --footer-text-color: #565656;

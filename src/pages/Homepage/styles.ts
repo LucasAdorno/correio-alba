@@ -10,9 +10,18 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
 
-  h1 {
-    color: #111;
-  }
+  .redHeader {
+    width: 100%;
+    height: 64px;
+    padding: 10px 10px 10px 40px;
+    background-color: #ED1A3B;
+
+    h1 {
+      color: white;
+      /* border: 1px; */
+    }
+}
+
 `;
 
 export const Main = styled.div`

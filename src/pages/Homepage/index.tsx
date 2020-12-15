@@ -58,9 +58,12 @@ const Homepage: React.FC = () => {
           <div className="redHeader">
             <h1>DESTAQUES</h1>
           </div>
-          
+          <br></br>
+          <br></br>
           
           <CategoryChart fullData={fullData} />
+          <br></br>
+          <br></br>
           <DeputyChart fullData={fullData} />
           <PartiesChart fullData={fullData} />
         </Main>

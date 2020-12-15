@@ -11,22 +11,23 @@ export const Container = styled.div`
 
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   justify-content: center;
-  gap: 30px;
+  gap: 32px;
 
   /* background: var(--subcontainers-background); */
 
   h3 {
     margin-bottom: 10px;
-    
+    font-size: 20px;
+
   }
 `;
 
 export const CategoryLine = styled.div<{ percent: number }>`
   width: 100%;
   height: 30px;
-  gap: 10px;
+  gap: 8px;
 
   display: flex;
   align-items: center;
@@ -38,10 +39,10 @@ export const CategoryLine = styled.div<{ percent: number }>`
 
   h4 {
     background: lightgrey;
-    width: 300px;
-    padding: 14px 24px 14px 24px;
-    font-size: 16px;
-    margin-right: 10px;
+    width: 350px;
+    padding: 10px 20px 10px 20px;
+    font-size: 20px;
+    margin-right: 0px;
     white-space: nowrap;
     
   }

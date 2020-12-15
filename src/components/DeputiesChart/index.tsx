@@ -11,7 +11,7 @@ interface Props {
 const DeputyChart: React.FC<Props> = ({ fullData }) => {
   return (
     <Container>
-      <h3>Deputados com mais gastos</h3>
+      <h3>DEPUTADOS COM MAIS GASTOS</h3>
       {fullData.topFiveDeputies.map((deputy, index) => (
         <DeputyLine
           percent={

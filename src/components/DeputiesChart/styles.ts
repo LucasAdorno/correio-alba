@@ -11,11 +11,11 @@ export const Container = styled.div`
 
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   justify-content: center;
   gap: 10px;
 
-  background: var(--subcontainers-background);
+  /* background: var(--subcontainers-background); */
 
   h3 {
     margin-bottom: 10px;
@@ -24,17 +24,21 @@ export const Container = styled.div`
 
 export const DeputyLine = styled.div<{ percent: number }>`
   width: 100%;
-  height: 30px;
+  height: 60px;
 
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: left;
+  background: lightgrey;
+  padding: 10px 20px 10px 20px;
 
   h1 {
     font-size: 12px;
   }
 
   div {
+    position: absolute
+    left: 300px;
     width: ${(props) => props.percent}%;
     height: 30px;
 

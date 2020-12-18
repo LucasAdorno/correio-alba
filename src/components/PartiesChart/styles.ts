@@ -3,9 +3,9 @@ import styled from "styled-components";
 export const Container = styled.div`
   width: 90%;
   min-height: 380px;
-  padding: 40px 20px;
+  padding: 30px 20px;
 
-  margin: 20px auto;
+  margin: 60px;
 
   border-radius: 8px;
 
@@ -24,10 +24,12 @@ export const Container = styled.div`
 
 export const PartyContainer = styled.div`
   width: 100%;
-  min-height: 80px;
-  max-height: 80px;
+  min-height: 60px;
+  max-height: 60px;
 
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
 
   background: #d4d4d4;

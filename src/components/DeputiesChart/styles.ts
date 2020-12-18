@@ -5,7 +5,7 @@ export const Container = styled.div`
   height: 280px;
   padding: 40px 20px;
 
-  margin: 20px auto;
+  margin: 60px;
 
   border-radius: 8px;
 
@@ -28,7 +28,7 @@ export const DeputyLine = styled.div<{ percent: number }>`
 
   display: flex;
   align-items: center;
-  justify-content: left;
+  justify-content: space-between;
   background: lightgrey;
   padding: 10px 20px 10px 20px;
 
@@ -37,8 +37,8 @@ export const DeputyLine = styled.div<{ percent: number }>`
   }
 
   div {
-    position: absolute
-    left: 300px;
+    /* position: static; */
+    /* left: 300px; */
     width: ${(props) => props.percent}%;
     height: 30px;
 
@@ -51,4 +51,5 @@ export const DeputyLine = styled.div<{ percent: number }>`
     background-color: #00578A;
     color: #fff;
   }
+
 `;

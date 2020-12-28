@@ -12,17 +12,19 @@ export const Container = styled.div`
 
   .redHeader {
     width: 100%;
-    height: 64px;
+    min-height: 64px;
     padding: 10px 10px 10px 40px;
-    margin-bottom:10px;
-    background-color: #ED1A3B;
+    margin-bottom: 10px;
+    background-color: #ed1a3b;
 
     h1 {
       color: white;
-      /* border: 1px; */
-    }
-}
 
+      @media (max-width: 767px) {
+        font-size: 24px;
+      }
+    }
+  }
 `;
 
 export const Main = styled.div`

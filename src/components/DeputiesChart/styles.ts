@@ -24,13 +24,18 @@ export const Container = styled.div`
 
 export const DeputyLine = styled.div<{ percent: number }>`
   width: 100%;
-  height: 60px;
 
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
+
   background: lightgrey;
   padding: 10px 20px 10px 20px;
+
+  @media (min-width: 767px) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
 
   h1 {
     font-size: 12px;
@@ -48,8 +53,7 @@ export const DeputyLine = styled.div<{ percent: number }>`
 
     border-radius: 4px;
 
-    background-color: #00578A;
+    background-color: #00578a;
     color: #fff;
   }
-
 `;

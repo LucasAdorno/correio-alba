@@ -2,10 +2,9 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 90%;
-  height: 280px;
-  padding: 40px 20px;
+  padding: 8px;
 
-  margin: 60px;
+  margin: 20px 0;
 
   border-radius: 8px;
 
@@ -15,23 +14,23 @@ export const Container = styled.div`
   justify-content: center;
   gap: 32px;
 
-  /* background: var(--subcontainers-background); */
-
   h3 {
     margin-bottom: 10px;
     font-size: 20px;
-
   }
 `;
 
 export const CategoryLine = styled.div<{ percent: number }>`
   width: 100%;
-  height: 30px;
   gap: 8px;
 
   display: flex;
-  align-items: center;
-  justify-content: left;
+  flex-direction: column;
+
+  @media (min-width: 767px) {
+    flex-direction: row;
+    align-items: center;
+  }
 
   h1 {
     font-size: 14px;
@@ -39,20 +38,22 @@ export const CategoryLine = styled.div<{ percent: number }>`
 
   h4 {
     background: lightgrey;
-    width: 350px;
     padding: 10px 20px 10px 20px;
-    font-size: 20px;
     margin-right: 0px;
     white-space: nowrap;
-    
+    font-size: 14px;
+    width: 250px;
+
+    @media (min-width: 767px) {
+      width: 350px;
+      font-size: 20px;
+    }
   }
 
   div {
     width: ${(props) => props.percent}%;
-    position: relative;
-    /* left: 380px; */
     height: 46px;
     border-radius: 0px;
-    background-color: #00578A;
+    background-color: #00578a;
   }
 `;

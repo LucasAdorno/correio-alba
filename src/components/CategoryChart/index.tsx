@@ -11,7 +11,7 @@ interface Props {
 const CategoryChart: React.FC<Props> = ({ fullData }) => {
   return (
     <Container>
-      <h3>CATEGORIAS COM MAIS GASTOS -</h3>
+      <h3>CATEGORIAS COM MAIS GASTOS </h3>
       {fullData.topFiveCategories.map((category) => (
         <CategoryLine
           percent={

@@ -10,6 +10,8 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
 
+  background: #f3f2f2;
+
   .redHeader {
     width: 100%;
     min-height: 64px;

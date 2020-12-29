@@ -47,19 +47,18 @@ const Homepage: React.FC = () => {
   }, []);
 
   return (
-    <Container>
+    <div>
+      <Container>
       <div className="redHeader">
         <h1>PRESTAÇÃO DE CONTAS</h1>
       </div>
-      
       <SearchDiv />
       {fullData ? (
         <Main>
           <div className="redHeader">
             <h1>DESTAQUES</h1>
           </div>
-          <br></br>
-          <br></br>
+
           
           <CategoryChart fullData={fullData} />
           <br></br>
@@ -67,10 +66,11 @@ const Homepage: React.FC = () => {
           <DeputyChart fullData={fullData} />
           <PartiesChart fullData={fullData} />
         </Main>
-      ) : (
-        <></>
-      )}
-    </Container>
+        ) : (
+          <></>
+        )}
+      </Container>
+    </div>
   );
 };
 

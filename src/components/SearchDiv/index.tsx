@@ -22,7 +22,7 @@ const SearchDiv: React.FC = () => {
   return (
     <Container>
       <InputDiv>
-        <h4>Prestação de contas</h4>
+        <h4>FAÇA A SUA BUSCA</h4>
         <div>
           <BiSearch />
           <input
@@ -33,7 +33,11 @@ const SearchDiv: React.FC = () => {
         <Link to="/search">Pesquisar</Link>
       </InputDiv>
       <DateDiv>
-        <h4>Período</h4>
+        <div id="date-selector-title">
+          <h4>DATA INICIAL</h4>
+          <h4>DATA FINAL</h4>
+        </div>
+        
         <div id="date-selector-div">
           <DatePicker
             className="data-styled"

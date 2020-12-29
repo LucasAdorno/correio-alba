@@ -15,7 +15,7 @@ export const Container = styled.div`
   /* justify-content: center; */
   gap: 10px;
 
-  background: var(--subcontainers-background);
+  /* background: var(--subcontainers-background); */
 
   h3 {
     margin-bottom: 10px;
@@ -26,6 +26,7 @@ export const PartyContainer = styled.div`
   width: 100%;
   min-height: 60px;
   max-height: 60px;
+  /* padding: 20px; */
 
   display: flex;
   align-items: center;

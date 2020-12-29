@@ -24,12 +24,14 @@ export const Container = styled.div`
 
 export const DeputyLine = styled.div<{ percent: number }>`
   width: 100%;
-
+  
   display: flex;
   flex-direction: column;
 
   background: lightgrey;
-  padding: 10px 20px 10px 20px;
+  padding: 20px;
+
+  gap: 10px;
 
   @media (min-width: 767px) {
     flex-direction: row;
@@ -45,7 +47,7 @@ export const DeputyLine = styled.div<{ percent: number }>`
     /* position: static; */
     /* left: 300px; */
     width: ${(props) => props.percent}%;
-    height: 30px;
+    height: 35px;
 
     display: flex;
     align-items: center;

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 90%;
-  padding: 8px;
+  padding: 20px;
 
   margin: 20px 0;
 
@@ -12,7 +12,7 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: left;
   justify-content: center;
-  gap: 32px;
+  gap: 18px;
 
   h3 {
     margin-bottom: 10px;
@@ -27,7 +27,7 @@ export const CategoryLine = styled.div<{ percent: number }>`
   display: flex;
   flex-direction: column;
 
-  @media (min-width: 767px) {
+  @media (min-width: 400px) {
     flex-direction: row;
     align-items: center;
   }

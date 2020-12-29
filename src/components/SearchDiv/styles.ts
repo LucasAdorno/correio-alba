@@ -1,27 +1,28 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 85%;
-  max-width: 1200px;
-
+  width: 90%;
+  max-width: 1080px;
+  margin-top: 24px;
   display: flex;
-  align-items: center;
+  padding: 20px;  /* align-items: center; */
 `;
 
 export const InputDiv = styled.div`
   width: 60%;
-
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
+  gap: 15px;
+  /* text-align: left; */
 
-  margin-top: 48px;
+  
 
   div {
     width: 100%;
-    height: 36px;
+    height: 50px;
     padding: 4px;
-
+    
     display: flex;
     align-items: center;
     gap: 4px;
@@ -29,7 +30,14 @@ export const InputDiv = styled.div`
     border-radius: 0px;
     border: 2px solid #3d55ad;
 
+    font-size:  18px;
+
     background-color: #efefef;
+  }
+
+  h4{
+    margin-left: 20px;
+    font-size: 20px;
   }
 
   div input {
@@ -38,13 +46,14 @@ export const InputDiv = styled.div`
 
     outline: none;
     border: none;
+    font-size: 18px;
 
     background-color: #efefef;
   }
 
   a {
-    width: 100px;
-    height: 40px;
+    width: 140px;
+    height: 50px;
     padding: 4px;
     margin-top: 8px;
 
@@ -52,6 +61,7 @@ export const InputDiv = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 24px;
 
     border-radius: 0px;
 
@@ -67,6 +77,17 @@ export const DateDiv = styled.div`
   flex-direction: column;
   align-items: center;
 
+  gap: 15px;
+
+  h4{
+    font-size: 20px;
+  }
+
+  #date-selector-title{
+    display: flex;
+    gap: 70px;
+  }
+
   #date-selector-div {
     width: 100%;
   }
@@ -77,7 +98,7 @@ export const DateDiv = styled.div`
 
   .data-styled {
     width: 100%;
-    height: 36px;
+    height: 50px;
 
     display: flex;
     align-items: center;
@@ -85,6 +106,7 @@ export const DateDiv = styled.div`
 
     text-align: center;
     font-weight: 400;
+    font-size: 18px;
 
     border-radius: 0px;
     border: 2px solid #3d55ad;

@@ -9,6 +9,13 @@ Here you will find all the details of the deputies expenses and information abou
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Built With:
+TypeScript
+Node.JS
+React.JS
+HTML, CSS and Bootstrap
+SQLite3
+
 ## Available Scripts
 
 In the project directory, you can run:

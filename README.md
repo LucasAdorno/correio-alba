@@ -1,4 +1,11 @@
-# Onde Está o Dinheiro Project
+# Onde Está o Dinheiro
+
+## About
+Onde está o dinheiro is the result of the Correio de Futuro 2020 award. The objective is to facilitate access and analysis of public data from the state of Bahia. The data are from the rendering of accounts of Bahia deputies and are collected from the transparency section in the Legislative Assembly of Bahia website (http://www.al.ba.gov.br/transparencia).
+Here you will find all the details of the deputies expenses and information about parties and also receivers with displayed in a complete dashboard, with maps, graphs and other visualizations.
+
+## Preview
+![Preview3](https://github.com/IgsousaB/Correio-Alba-Backend/blob/master/screenshots/entitypage.png)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

@@ -8,6 +8,7 @@ import SearchDiv from "../../components/SearchDiv";
 import CategoryChart from "../../components/CategoryChart";
 import DeputyChart from "../../components/DeputiesChart";
 import PartiesChart from "../../components/PartiesChart";
+import RedTitle from "../../components/RedTitle";
 
 export interface IParties {
   name: string;
@@ -49,23 +50,16 @@ const Homepage: React.FC = () => {
   return (
     <div>
       <Container>
-      <div className="redHeader">
-        <h1>PRESTAÇÃO DE CONTAS</h1>
-      </div>
-      <SearchDiv />
-      {fullData ? (
-        <Main>
-          <div className="redHeader">
-            <h1>DESTAQUES</h1>
-          </div>
+        <RedTitle title="PRESTAÇÃO DE CONTAS"/>
+        <SearchDiv />
 
-          
-          <CategoryChart fullData={fullData} />
-          <br></br>
-          <br></br>
-          <DeputyChart fullData={fullData} />
-          <PartiesChart fullData={fullData} />
-        </Main>
+        {fullData ? (
+          <Main>
+            <RedTitle title="DESTAQUES"/>
+            <CategoryChart fullData={fullData} /> <br></br><br></br>
+            <DeputyChart fullData={fullData} />
+            <PartiesChart fullData={fullData} />
+          </Main>
         ) : (
           <></>
         )}

@@ -3,12 +3,14 @@ import React, { useEffect, useState } from "react";
 import api from "../../services/api";
 
 import { Container, Main } from "./styles";
-
 import SearchDiv from "../../components/SearchDiv";
+import RedTitle from "../../components/RedTitle";
+import FilterInBox from "../../components/FilterInBox";
+import InfoContainer from "../../components/InfoContainer";
 import CategoryChart from "../../components/CategoryChart";
 import DeputyChart from "../../components/DeputiesChart";
 import PartiesChart from "../../components/PartiesChart";
-import RedTitle from "../../components/RedTitle";
+import DataContainer from "../../components/DataContainer";
 
 export interface IParties {
   name: string;
@@ -36,7 +38,7 @@ export interface IData {
   topFiveCategories: IParties[];
 }
 
-const Homepage: React.FC = () => {
+const Deppage: React.FC = () => {
   const [fullData, setFullData] = useState<IData>();
 
   useEffect(() => {
@@ -47,25 +49,56 @@ const Homepage: React.FC = () => {
     });
   }, []);
 
-  return (
+    return (
     <div>
+      {/* <RedTitle title="PESQUISA DE DESPESAS"></RedTitle> */}
       <Container>
-        <RedTitle title="FAÇA A SUA BUSCA"/>
-        <SearchDiv />
+        <InfoContainer />
 
         {fullData ? (
           <Main>
-            <RedTitle title="VEJA OS DESTAQUES"/>
+            <RedTitle title="PRESTAÇÃO DE CONTAS - DEPUTADO"/>
             <CategoryChart fullData={fullData} /> <br></br><br></br>
-            <DeputyChart fullData={fullData} />
-            <PartiesChart fullData={fullData} />
           </Main>
         ) : (
           <></>
         )}
+
+        <FilterInBox />
+        <Main>
+          <DataContainer />
+          <DataContainer />
+          <DataContainer />
+          <DataContainer />
+          <DataContainer />
+          <DataContainer />
+          <DataContainer />
+          <DataContainer />
+          <DataContainer />
+          <DataContainer />
+          <DataContainer />
+          <DataContainer />
+          <DataContainer />
+          <DataContainer />
+          <DataContainer />
+          <DataContainer />
+          <DataContainer />
+          <DataContainer />
+          <DataContainer />
+          <DataContainer />
+          <DataContainer />
+          <DataContainer />
+          <DataContainer />
+          <DataContainer />
+          <DataContainer />
+          <DataContainer />
+          <DataContainer />
+          <DataContainer />
+        </Main>
+          
       </Container>
     </div>
   );
 };
 
-export default Homepage;
+export default Deppage;

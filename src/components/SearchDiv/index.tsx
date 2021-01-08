@@ -22,7 +22,7 @@ const SearchDiv: React.FC = () => {
   return (
     <Container>
       <InputDiv>
-        <h4>FAÇA A SUA BUSCA</h4>
+        <h4>PRESTAÇÃO DE CONTAS</h4>
         <div>
           <BiSearch />
           <input

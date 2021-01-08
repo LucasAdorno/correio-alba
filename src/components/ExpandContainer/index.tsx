@@ -2,7 +2,7 @@ import React, { MouseEvent } from 'react';
 
 import { Container } from './styles';
 
-const DataContainer: React.FC = () => {
+const ExpandContainer: React.FC = () => {
 
   const toggleClass = (event: MouseEvent) => {
     event.preventDefault();
@@ -15,7 +15,7 @@ const DataContainer: React.FC = () => {
     <Container>
       <div className='initial-bar' >
         <div className="initial-header-bar" onClick={toggleClass}>
-          <h2>Despesa</h2>
+          <h2>Exemplo</h2>
           <div className="red-total-bar">
             <h4>R$102.020.100,00</h4>
           </div>
@@ -46,4 +46,4 @@ const DataContainer: React.FC = () => {
   );
 }
 
-export default DataContainer;
+export default ExpandContainer;

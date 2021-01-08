@@ -15,29 +15,29 @@ const DataContainer: React.FC = () => {
     <Container>
       <div className='initial-bar' >
         <div className="initial-header-bar" onClick={toggleClass}>
-          <h2>Despesa</h2>
+          <h2>Partido</h2>
           <div className="red-total-bar">
             <h4>R$102.020.100,00</h4>
           </div>
         </div>
         <div className="initial-content">
           <div className="initial-content-line">
-            <a href="/partido/icon" className='highlight-text'> Teste </a>
+            <a href="/partido/nome" className='highlight-text'> Deputado </a>
             <p>R$ 30.203.021,00</p>
           </div>
           <div className="initial-content-line">
-            <a href="/partido/icon" className='highlight-text'> Teste </a>
+            <a href="/partido/nome" className='highlight-text'> Deputado </a>
             <p>R$ 30.203.021,00</p>
           </div>
           <div className="initial-content-line">
-            <a href="/partido/icon" className='highlight-text'> Teste </a>
+            <a href="/partido/nome" className='highlight-text'> Deputado </a>
             <p>R$ 30.203.021,00</p>
           </div>
           <div className="initial-content-line">
-            <a href="/partido/icon" className='highlight-text'> Teste </a>
+            <a href="/deputado/nome" className='highlight-text'> Deputado </a>
             <p>R$ 30.203.021,00</p>
           </div>
-          <a href="/partido/icon" className="link-page highlight-text">
+          <a href="/partido/nome" className="link-page highlight-text">
           Página da entidade
         </a>
         </div>

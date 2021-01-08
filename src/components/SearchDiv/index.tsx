@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { ChangeEvent, useState } from "react";
 import { Link } from "react-router-dom";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
@@ -10,6 +10,7 @@ import { Container, InputDiv, DateDiv } from "./styles";
 const SearchDiv: React.FC = () => {
   const [startDate, setStartDate] = useState(new Date());
   const [endDate, setEndDate] = useState(new Date());
+  const [infoSearch, setInfoSearch] = useState<string>();
 
   const functionStartDate = (date: Date) => {
     setStartDate(date);
@@ -17,6 +18,11 @@ const SearchDiv: React.FC = () => {
 
   const functionEndDate = (date: Date) => {
     setEndDate(date);
+  };
+
+  const handleInputSearch = (e: ChangeEvent<HTMLInputElement>) => {
+    e.preventDefault();
+    setInfoSearch(e.currentTarget.value);
   };
 
   return (
@@ -28,9 +34,11 @@ const SearchDiv: React.FC = () => {
           <input
             type="text"
             placeholder="Partido, Deputado, Categoria, Recebedor..."
+            onChange={handleInputSearch}
+            value={infoSearch}
           />
         </div>
-        <Link to="/search">Pesquisar</Link>
+        <Link to={`/search/${infoSearch}/${startDate}/${endDate}`}>Pesquisar</Link>
       </InputDiv>
       <DateDiv>
         <h4>Período</h4>

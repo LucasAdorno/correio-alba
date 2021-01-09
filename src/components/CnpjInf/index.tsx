@@ -6,21 +6,21 @@ const CnpjInf: React.FC = () => {
     <Container>
       <div className="line-information">
         <p>SITUAÇÃO CADASTRAL:</p>
-        <a href="#" className="active">
+        <p className="active">
           ATIVA
-        </a>
+        </p>
       </div>
       <div className="line-information">
         <p>Principal atividade econômica:</p>
-        <a href="#" className="incress-weight">
+        <p className="incress-weight">
           Suporte tal
-        </a>
+        </p>
       </div>
       <div className="line-information">
         <p>Endereço:</p>
-        <a href="#" className="adress">
+        <p className="adress">
           Rua Fulano de tal, 000, São Paulo - SP, 40000-000
-        </a>
+        </p>
       </div>
     </Container>
   );

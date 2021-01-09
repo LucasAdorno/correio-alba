@@ -1,24 +1,55 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
+import FilterInBox from "../../components/FilterInBox";
 import api from "../../services/api";
-// import { Container } from './styles';
+import { Container } from "./styles";
 
 interface Props {
   match: {
     params: {
       query: string;
       startdate: string;
+      enddate: string;
     };
   };
 }
 
+export interface ITotalData {
+  partido: string;
+  deputados: {
+    deputado: string;
+    gastos: {
+      nota: string;
+      categoria: string;
+      cpf_cnpj: string;
+      recebedor: string;
+      date: string;
+      valor: string;
+    }[];
+  }[];
+}
+
 const SearchPage: React.FC<Props> = ({ match }) => {
+  const [totalData, setTotalData] = useState<ITotalData[]>();
+
   useEffect(() => {
-    api
-      .post("fulldata", { query: match.params.query })
-      .then((response) => console.log(response.data));
+    const { query, startdate, enddate } = match.params;
+    api.post("fulldata", { query, startdate, enddate }).then((response) => {
+      setTotalData(response.data);
+      return console.log(response.data);
+    });
   }, [match]);
 
-  return <div />;
+  return (
+    <>
+      {totalData ? (
+        <Container>
+          <FilterInBox totalData={totalData} />
+        </Container>
+      ) : (
+        <></>
+      )}
+    </>
+  );
 };
 
 export default SearchPage;

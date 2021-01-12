@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import FilterInBox from "../../components/FilterInBox";
+import SearchDiv from "../../components/SearchDiv";
 import api from "../../services/api";
 import { Container } from "./styles";
 
@@ -43,6 +44,8 @@ const SearchPage: React.FC<Props> = ({ match }) => {
     <>
       {totalData ? (
         <Container>
+          <SearchDiv />
+
           <FilterInBox totalData={totalData} />
         </Container>
       ) : (

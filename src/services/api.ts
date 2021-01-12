@@ -1,5 +1,5 @@
 import axios from "axios";
 
-const app = axios.create({ baseURL: "http://localhost:3333" });
+const app = axios.create({ baseURL: "https://albaapi.herokuapp.com" });
 
 export default app;

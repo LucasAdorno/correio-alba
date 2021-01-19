@@ -10,10 +10,15 @@ import {
 
 interface Props {
   totalData: ITotalData[];
+  groupSelected: boolean;
+  setGroupSelected: () => void;
 }
 
-const FilterInBox: React.FC<Props> = ({ totalData }) => {
-  const [groupSelected, setGroupSelected] = useState(true);
+const FilterInBox: React.FC<Props> = ({
+  totalData,
+  groupSelected,
+  setGroupSelected,
+}) => {
   const [validDeputies, setValidDeputies] = useState<string[]>();
   const [validParties, setValidParties] = useState<string[]>();
 
@@ -35,13 +40,13 @@ const FilterInBox: React.FC<Props> = ({ totalData }) => {
       <SelectType>
         <FilterTitle>Agrupar por</FilterTitle>
         <FilterOption>
-          <button onClick={() => setGroupSelected(!groupSelected)}>
+          <button onClick={() => setGroupSelected()}>
             <div className={groupSelected ? "group-selected" : ""}></div>
           </button>
           <h4>Deputados</h4>
         </FilterOption>
         <FilterOption>
-          <button onClick={() => setGroupSelected(!groupSelected)}>
+          <button onClick={() => setGroupSelected()}>
             <div className={groupSelected ? "" : "group-selected"}></div>
           </button>
           <h4>Partidos</h4>

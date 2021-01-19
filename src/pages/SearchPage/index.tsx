@@ -31,6 +31,7 @@ export interface ITotalData {
 
 const SearchPage: React.FC<Props> = ({ match }) => {
   const [totalData, setTotalData] = useState<ITotalData[]>();
+  const [groupSelected, setGroupSelected] = useState(true);
 
   useEffect(() => {
     const { query, startdate, enddate } = match.params;
@@ -44,9 +45,19 @@ const SearchPage: React.FC<Props> = ({ match }) => {
     <>
       {totalData ? (
         <Container>
-          <SearchDiv />
-
-          <FilterInBox totalData={totalData} />
+          <div
+            style={{ width: "100%", display: "flex", justifyContent: "center" }}
+          >
+            <SearchDiv />
+          </div>
+          <div style={{ width: "100%", display: "flex", gap: "8px" }}>
+            <FilterInBox
+              groupSelected={groupSelected}
+              setGroupSelected={() => setGroupSelected(!groupSelected)}
+              totalData={totalData}
+            />
+            {/* <ExpandInfo>{}</ExpandInfo> */}
+          </div>
         </Container>
       ) : (
         <></>

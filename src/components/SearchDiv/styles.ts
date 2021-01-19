@@ -10,6 +10,7 @@ export const Container = styled.div`
 
 export const InputDiv = styled.div`
   width: 60%;
+  height: 104px;
 
   display: flex;
   flex-direction: column;
@@ -17,7 +18,13 @@ export const InputDiv = styled.div`
 
   margin-top: 48px;
 
-  div {
+  #input-search {
+    width: 100%;
+    min-height: 36px;
+    max-height: 140px;
+  }
+
+  #input-search #input-area {
     width: 100%;
     height: 36px;
     padding: 4px;
@@ -30,6 +37,27 @@ export const InputDiv = styled.div`
     border: 2px solid #3d55ad;
 
     background-color: #efefef;
+  }
+
+  #sugestions {
+    width: 100%;
+    min-height: 36px;
+    max-height: 140px;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow-y: scroll;
+  }
+
+  #sugestions a {
+    width: 100%;
+    height: 42px;
+    margin: 0;
+    padding: 12px;
+    background: #e0e0e0;
+    color: #3d55ad;
+    z-index: 999;
   }
 
   div input {
